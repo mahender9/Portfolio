@@ -37,6 +37,13 @@
             list-style: none;
             margin :0 23px;
         }
+        .section {
+            padding: 6rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 100vh;  
+        }
         nav ul a li{
             text-decoration: none;
             color:white;
@@ -78,6 +85,16 @@
             padding:50px 0px;
     
         }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .section p {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -87,28 +104,47 @@
             <div class="left"> Mahender's Portfolio </div>
             <div class="right"> 
                 <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="/"><li>About</li></a>
-                    <a href="/"><li>Contact Me</li></a>
+                    <a href="#Home"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Contact"><li>Contact Me</li></a>
+                    <a href="#Skills"><li>Skills</li></a>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="firstSection">
+        <section id="Home" class="firstSection">
             <div class="leftSection">
                 Hi, My Name is<span class="pink"> Mahender</span>
                 and I am a  
                 <span id="element"></span>
                 <div class="buttons">
                     <button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">Download Resume</button>
-                    <button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">Visit GitHub</button>
+                    <a href="https://github.com/mahender9"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">Visit GitHub</button></a>
                 </div>
             </div>
                 
             <div class="rightSection">
                 <img src="bg.webp" alt="" >
             </div>
+        </section>
+        <section id="Skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, C++</li>
+                <li>Web Development: HTML, CSS, React, Django</li>
+                <li>Tools: Git, Docker, SQL</li>
+            </ul>
+        </section>
+    
+        <section id="About" class="section">
+            <h2>About Me</h2>
+            <p>I am a dedicated and passionate developer with a strong background in computer science and web development. I have experience in various programming languages and technologies, and I am always eager to learn and take on new challenges.</p>
+        </section>
+        <section id="Contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href=mahenderkummari09@gmail.com>Mail</a>
+            <!-- Add more contact methods as needed -->
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
